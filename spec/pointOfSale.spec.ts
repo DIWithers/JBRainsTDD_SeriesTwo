@@ -4,5 +4,5 @@ describe("Point Of Sale Test", () => {
         let sale: Sale = new Sale();
         sale.onBarcode("12345");
         expect(display.getText()).toBe("7.95");
-    })
-})
+    });
+});
