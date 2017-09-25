@@ -2,7 +2,10 @@ var Display = (function () {
     function Display() {
     }
     Display.prototype.getText = function () {
-        return "7.95";
+        return this.text;
+    };
+    Display.prototype.setText = function (text) {
+        this.text = text;
     };
     return Display;
 }());

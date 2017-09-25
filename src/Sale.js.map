@@ -1,1 +1,1 @@
-{"version":3,"file":"Sale.js","sourceRoot":"","sources":["Sale.ts"],"names":[],"mappings":"AAAA;IAAA;IAGA,CAAC;IAFG,wBAAS,GAAT,UAAU,OAAe;IACzB,CAAC;IACL,WAAC;AAAD,CAAC,AAHD,IAGC"}
+{"version":3,"file":"Sale.js","sourceRoot":"","sources":["Sale.ts"],"names":[],"mappings":"AAAA;IAEI,cAAY,OAAgB;QACxB,OAAO,CAAC,GAAG,CAAC,OAAO,CAAC,CAAC;QACrB,IAAI,CAAC,OAAO,GAAG,OAAO,CAAC;IAE3B,CAAC;IAED,wBAAS,GAAT,UAAU,OAAe;QACrB,IAAI,CAAC,OAAO,CAAC,OAAO,CAAC,MAAM,CAAC,CAAC;IACjC,CAAC;IACL,WAAC;AAAD,CAAC,AAXD,IAWC"}

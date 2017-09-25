@@ -1,5 +1,11 @@
 class Display {
+    private text: string;
+
     getText(): string {
-        return "7.95";
+        return this.text;
+    }
+
+    setText(text: string): void {
+        this.text = text;
     }
 }
