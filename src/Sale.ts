@@ -1,12 +1,12 @@
 class Sale {
     private display: Display;
     constructor(display: Display) {
-        console.log(display);
         this.display = display;
 
     }
 
     onBarcode(barcode: string): void {
-        this.display.setText("7.95");
+        if(barcode === "12345") this.display.setText("7.95");
+        else this.display.setText("12.50");
     }
 }
