@@ -7,6 +7,6 @@ class Sale {
 
     onBarcode(barcode: string): void {
         if(barcode === "12345") this.display.setText("7.95");
-        else this.display.setText("12.50");
+        else if(barcode === "23456") this.display.setText("12.50");
     }
 }

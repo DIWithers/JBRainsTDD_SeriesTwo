@@ -5,7 +5,7 @@ var Sale = (function () {
     Sale.prototype.onBarcode = function (barcode) {
         if (barcode === "12345")
             this.display.setText("7.95");
-        else
+        else if (barcode === "23456")
             this.display.setText("12.50");
     };
     return Sale;
