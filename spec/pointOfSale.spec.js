@@ -17,5 +17,11 @@ describe("Point Of Sale Test", function () {
         sale.onBarcode("99999");
         expect(display.getText()).toBe("Product not found for 99999");
     });
+    it("Empty Barcode", function () {
+        var display = new Display();
+        var sale = new Sale(display);
+        sale.onBarcode("");
+        expect(display.getText()).toBe("Scanning error: empty barcode");
+    });
 });
 //# sourceMappingURL=pointOfSale.spec.js.map

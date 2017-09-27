@@ -17,4 +17,10 @@ describe("Point Of Sale Test", () => {
         sale.onBarcode("99999");
         expect(display.getText()).toBe("Product not found for 99999");
     });
+    it("Empty Barcode", () => {
+        let display: Display = new Display();
+        let sale: Sale = new Sale(display);
+        sale.onBarcode("");
+        expect(display.getText()).toBe("Scanning error: empty barcode");
+    });
 })
