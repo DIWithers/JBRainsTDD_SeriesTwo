@@ -10,6 +10,7 @@
  as parameters.
 
  **Test List - ** product found, product not found, empty barcode, null barcode
+ 
  **Refactoring List - ** duplicate test setup, introduce lookup table
 
 **Speaker Comments**
