@@ -11,9 +11,9 @@ var Sale = (function () {
             pricesByBarcode.set("12345", "7.95");
             pricesByBarcode.set("23456", "12.50");
             if (barcode === "12345")
-                this.display.setText(pricesByBarcode.get("12345"));
+                this.display.setText(pricesByBarcode.get(barcode));
             else if (barcode === "23456")
-                this.display.setText(pricesByBarcode.get("23456"));
+                this.display.setText(pricesByBarcode.get(barcode));
             else
                 this.display.setText("Product not found for " + barcode);
         }
