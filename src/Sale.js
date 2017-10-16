@@ -6,10 +6,14 @@ var Sale = (function () {
         if (barcode === "")
             this.display.setText("Scanning error: empty barcode");
         else {
+            // introduce lookup table
+            var pricesByBarcode = new Map();
+            pricesByBarcode.set("12345", "7.95");
+            pricesByBarcode.set("23456", "12.50");
             if (barcode === "12345")
-                this.display.setText("7.95");
+                this.display.setText(pricesByBarcode.get("12345"));
             else if (barcode === "23456")
-                this.display.setText("12.50");
+                this.display.setText(pricesByBarcode.get("23456"));
             else
                 this.display.setText("Product not found for " + barcode);
         }

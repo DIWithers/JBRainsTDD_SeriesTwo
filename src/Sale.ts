@@ -8,8 +8,12 @@ class Sale {
     onBarcode(barcode: string): void {
         if (barcode === "") this.display.setText("Scanning error: empty barcode");
         else {
-            if (barcode === "12345") this.display.setText("7.95");
-            else if (barcode === "23456") this.display.setText("12.50");
+            // introduce lookup table
+            let pricesByBarcode: Map = new Map();
+            pricesByBarcode.set("12345", "7.95");
+            pricesByBarcode.set("23456", "12.50");
+            if (barcode === "12345") this.display.setText(pricesByBarcode.get("12345"));
+            else if (barcode === "23456") this.display.setText(pricesByBarcode.get("23456"));
             else this.display.setText("Product not found for " + barcode);
         }
     }
