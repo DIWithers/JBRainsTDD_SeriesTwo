@@ -9,7 +9,8 @@
  duplicated between the production code and the tests, change the production code to accept that data
  as parameters.
 
- **Test List - ** product found, product not found, empty barcode, null barcode | duplicate test setup, introduce lookup table
+ **Test List - ** product found, product not found, empty barcode, null barcode
+ **Refactoring List - ** duplicate test setup, introduce lookup table
 
 **Speaker Comments**
 
@@ -29,7 +30,7 @@
 
   1. Add the new code.
   2. Migrate the clients.
-  3. Remove the old code.   
+  3. Remove the old code.
 
 
   To remove an "if" statement, make every branch do the same thing, so that branching is no longer needed.
