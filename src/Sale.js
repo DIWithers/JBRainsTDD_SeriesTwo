@@ -1,7 +1,7 @@
 var Sale = (function () {
     function Sale(display) {
         this.display = display;
-        this.pricesByBarcode = new Map();
+        this.pricesByBarcode = this.pricesByBarcode = new Map();
         //details in data
         this.pricesByBarcode.set("12345", "7.95");
         this.pricesByBarcode.set("23456", "12.50");

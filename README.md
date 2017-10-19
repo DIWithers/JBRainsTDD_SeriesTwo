@@ -20,6 +20,8 @@
  "Trusted Zone". I call this the **Bouncer** pattern: have one big, strong person at the front door keeping bad data out, and
   continually expand the "trusted zone" inside your code, where the occasional mistake appears as an unexpected exception.
 
+  "Temporal Duplication" : Same or similar steps happening more than once over time.
+
   "Four Elements of Simple Design" :
 
   1. Pass the tests.
