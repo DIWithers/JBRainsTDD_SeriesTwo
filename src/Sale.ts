@@ -4,10 +4,10 @@ class Sale {
 
     constructor(display: Display) {
         this.display = display;
-        this.pricesByBarcode = this.pricesByBarcode = new Map();
         //details in data
-        this.pricesByBarcode.set("12345", "7.95");
-        this.pricesByBarcode.set("23456", "12.50");
+        this.pricesByBarcode = new Map()
+            .set("12345", "7.95")
+            .set("23456", "12.50");
     }
 
     onBarcode(barcode: string): void {
