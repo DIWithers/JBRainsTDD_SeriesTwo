@@ -25,7 +25,7 @@ describe("Point Of Sale Test", function () {
     });
     it("Empty Barcode", function () {
         var display = new Display();
-        var sale = new Sale(display, new Map());
+        var sale = new Sale(display, null);
         sale.onBarcode("");
         expect(display.getText()).toBe("Scanning error: empty barcode");
     });
