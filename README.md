@@ -38,3 +38,5 @@
 
   To remove an "if" statement, make every branch do the same thing, so that branching is no longer needed.
   Naming a lookup table: Values By Key.
+
+  "Refused Bequest" :  Making it look like you'll do something without doing it.
