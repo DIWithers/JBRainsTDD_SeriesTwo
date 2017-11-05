@@ -2,14 +2,11 @@ class Sale {
     private display: Display;
     private pricesByBarcode: Map<any, any>;
 
-    constructor(display: Display) {
+    constructor(display: Display, pricesByBarcode: any) {
         this.display = display;
         //details in data
-        this.pricesByBarcode = new Map()
-            .set("12345", "7.95")
-            .set("23456", "12.50");
+        this.pricesByBarcode = pricesByBarcode
     }
-
     onBarcode(barcode: string): void {
         //abstraction in code
         if (barcode === "") this.display.setText("Scanning error: empty barcode");

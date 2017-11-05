@@ -1,11 +1,10 @@
 var Sale = (function () {
-    function Sale(display) {
+    function Sale(display, pricesByBarcode) {
         this.display = display;
-        this.pricesByBarcode = this.pricesByBarcode = new Map();
         //details in data
-        this.pricesByBarcode.set("12345", "7.95");
-        this.pricesByBarcode.set("23456", "12.50");
+        this.pricesByBarcode = pricesByBarcode;
     }
+
     Sale.prototype.onBarcode = function (barcode) {
         //abstraction in code
         if (barcode === "")
