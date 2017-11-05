@@ -26,4 +26,5 @@ describe("Point Of Sale Test", function () {
         expect(display.getText()).toBe("Scanning error: empty barcode");
     });
 });
+//part 4!!!!! 
 //# sourceMappingURL=pointOfSale.spec.js.map

@@ -1,10 +1,10 @@
 class Sale {
     private display: Display;
-    private pricesByBarcode: Map<any, any>;
+    private pricesByBarcode: Map<string, string>;
 
     constructor(display: Display, pricesByBarcode: any) {
         this.display = display;
-        this.pricesByBarcode = pricesByBarcode
+        this.pricesByBarcode = pricesByBarcode;
     }
     onBarcode(barcode: string): void {
         if (barcode === "") {

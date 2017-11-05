@@ -26,3 +26,4 @@ describe("Point Of Sale Test", () => {
         expect(display.getText()).toBe("Scanning error: empty barcode");
     });
 })
+ //part 4!!!!!
