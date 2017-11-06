@@ -40,3 +40,9 @@
   Naming a lookup table: Values By Key.
 
   "Refused Bequest" :  Making it look like you'll do something without doing it.
+
+  MAP(model) -----> SALE(controller) -----> DISPLAY(view)
+
+  The two most FUNDAMENTAL rules of TDD:
+  1. Don't write code without a failing test.
+  2. Remove duplication.

@@ -8,10 +8,22 @@ class Sale {
     }
     onBarcode(barcode: string): void {
         if (barcode === "") {
-            this.display.setText("Scanning error: empty barcode");
+            this.displayEmptyBarcodeMessage();
             return;
         }
-            if (this.pricesByBarcode.has(barcode)) this.display.setText(this.pricesByBarcode.get(barcode));
-            else this.display.setText("Product not found for " + barcode);
+            if (this.pricesByBarcode.has(barcode)) this.displayPrice(barcode);
+            else this.displayProductNotFoundMessage(barcode);
+    }
+
+    private displayPrice(barcode: string): void {
+        this.display.setText(this.pricesByBarcode.get(barcode));
+    }
+
+    private displayProductNotFoundMessage(barcode: string): void {
+        this.display.setText("Product not found for " + barcode);
+    }
+
+    private displayEmptyBarcodeMessage(): void {
+        this.display.setText("Scanning error: empty barcode");
     }
 }
